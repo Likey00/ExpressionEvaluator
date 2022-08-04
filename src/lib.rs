@@ -17,8 +17,9 @@ pub fn app() -> Html {
         Callback::from(move |eq: String| {
             cloned_state.set(match evaluate_expression(&eq) {
                 Ok(num) => {
-                    format!("The answer is {:.10}", num)
-                        .trim_end_matches(['.', '0'])
+                    let large_num = 1_000_000_000_000_000.0;
+
+                    format!("The answer is {}", (num*large_num).round()/large_num)
                         .to_owned()
                 },
                 Err(e) => e.to_owned(),

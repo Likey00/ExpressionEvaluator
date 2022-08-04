@@ -10,5 +10,5 @@ Next, use cargo to install trunk by running:
 Finally, add the WASM build target by running:
 ```rustup target add wasm32-unknown-unknown```
 
-Now you can run the app locally from the calculator folder with:
+Now you can run the app locally from the project folder with:
 ```trunk serve --open```
