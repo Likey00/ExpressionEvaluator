@@ -1,7 +1,10 @@
 # ExpressionEvaluator
 Rust Web App using Yew to perform the functions of a 4-function calculator
 
-# How to run
+# How to access from web
+The web app can be accessed [here](https://likey00.github.io/ExpressionEvaluator/)
+
+# How to run locally
 First, download rust from [here](https://www.rust-lang.org/tools/install)
 
 Next, use cargo to install trunk by running:
